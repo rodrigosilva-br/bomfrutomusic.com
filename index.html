@@ -2,14 +2,61 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Em Construção</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Em breve</title>
   <style>
-    body { background: #111; color: white; font-family: sans-serif; text-align: center; padding-top: 20%; }
-    h1 { font-size: 2.5em; }
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #1f1c2c, #928dab);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 3em;
+      margin-bottom: 0.5em;
+    }
+
+    p {
+      font-size: 1.2em;
+      opacity: 0.85;
+    }
+
+    .logo {
+      width: 100px;
+      height: 100px;
+      background-color: rgba(255,255,255,0.2);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2em;
+      margin-bottom: 1.5em;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2em;
+      }
+
+      .logo {
+        width: 80px;
+        height: 80px;
+        font-size: 1.5em;
+      }
+    }
   </style>
 </head>
 <body>
-  <h1>Site em construção</h1>
-  <p>Voltamos em breve com novidades!</p>
+  <div class="logo">MP</div>
+  <h1>Estamos trabalhando!</h1>
+  <p>Nosso site está em construção. Voltamos em breve com novidades incríveis.</p>
 </body>
 </html>
