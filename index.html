@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bom Fruto Music</title>
+  <title>Bom Filho Music - Em Construção</title>
   <style>
     body {
       margin: 0;
       padding: 0;
-      background: linear-gradient(to right, #1f1c2c, #928dab);
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #141e30, #243b55);
       color: white;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -20,8 +20,8 @@
     }
 
     h1 {
-      font-size: 3em;
-      margin-bottom: 0.5em;
+      font-size: 2.8em;
+      margin-bottom: 0.2em;
     }
 
     p {
@@ -29,16 +29,35 @@
       opacity: 0.85;
     }
 
-    .logo {
-      width: 100px;
-      height: 100px;
-      background-color: rgba(255,255,255,0.2);
+    .gear {
+      margin: 40px auto;
+      width: 80px;
+      height: 80px;
+      border: 10px solid white;
       border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 2em;
-      margin-bottom: 1.5em;
+      position: relative;
+      animation: spin 3s linear infinite;
+    }
+
+    .gear::before,
+    .gear::after {
+      content: '';
+      position: absolute;
+      width: 20px;
+      height: 10px;
+      background: white;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .gear::after {
+      transform: translate(-50%, -50%) rotate(90deg);
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
     }
 
     @media (max-width: 600px) {
@@ -46,17 +65,17 @@
         font-size: 2em;
       }
 
-      .logo {
-        width: 80px;
-        height: 80px;
-        font-size: 1.5em;
+      .gear {
+        width: 60px;
+        height: 60px;
+        border-width: 8px;
       }
     }
   </style>
 </head>
 <body>
-  <div class="logo">Bom Fruto Music</div>
-  <h1>Estamos trabalhando!</h1>
-  <p>Nosso site está em construção. Voltamos em breve com novidades incríveis.</p>
+  <h1>Bom Filho Music</h1>
+  <div class="gear"></div>
+  <p>Nosso site está em construção.<br>Voltamos em breve com novidades sonoras!</p>
 </body>
 </html>
